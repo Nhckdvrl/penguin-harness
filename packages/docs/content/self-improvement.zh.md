@@ -110,7 +110,7 @@ Evaluator 返回的结果里不含评分细则的内容、Gold、逐项得分和
 
 ## RSI 工具包
 
-RSI（Recursive Self-Improvement，递归自我进化）正是本页讲的事：模型固定不动，Agent 依据自己实测的结果改进自己的 Harness——提示词、Skill、工具与钩子。每一种自进化算法都以一个 **RSI 工具包**发布，也就是插件库 **Agent 自进化**分类里的一个插件。上文的循环就是 **Default RSI Toolkit**（`default-rsi-toolkit`）；另外八个工具包各实现一种已发表的算法，并声明适配差异，各带一个与插件同名的 Skill：
+RSI（Recursive Self-Improvement，递归自我进化）正是本页讲的事：模型固定不动，Agent 依据自己实测的结果改进自己的 Harness——提示词、Skill、工具与钩子。每一种自进化算法都以一个 **RSI 工具包**发布，也就是插件库 **Agent 自进化**分类里的一个插件。上文的循环就是 **Default RSI Toolkit**（`default-rsi-toolkit`）；另外九个工具包各实现一种已发表的算法，并声明适配差异，各带一个与插件同名的 Skill：
 
 - **OPRO**（`opro-rsi-toolkit`），出自 [Large Language Models as Optimizers](https://arxiv.org/abs/2309.03409)（Yang 等，2023）：优化器依据历史指令与分数提出新指令，每个候选都在冻结的 Benchmark 上测量，保留得分最高的指令。
 - **APE**（`ape-rsi-toolkit`），出自 [Large Language Models are Human-Level Prompt Engineers](https://arxiv.org/abs/2211.01910)（Zhou 等，2022）：不迭代、一次完成，提议者从输入 / 输出示例归纳候选指令，每个候选都测量一遍，保留最优者。
@@ -120,6 +120,7 @@ RSI（Recursive Self-Improvement，递归自我进化）正是本页讲的事：
 - **[SkillOpt](https://arxiv.org/abs/2605.23904)**（`skillopt-rsi-toolkit`）：限制文本编辑幅度，按评分筛选候选，并在训练轮次之间总结经验。无独立验证集时，复用全部或指定部分 Train 筛选候选，仍保留全部 Train 参与学习。
 - **[OpenSkill](https://arxiv.org/abs/2606.06741)**（`openskill-rsi-toolkit`）：先通过外部检索与独立虚拟验证构建技能，再评测冻结的 State。
 - **TRACE** （`trace-rsi-toolkit`），出自 [TRACE](https://arxiv.org/abs/2608.22793)（Wu 等，2026）：入口 Skill 负责外层实验组织，训练参考文件作为独立的 Curator Skill 安装到容器内。外层 Agent 通过 Harbor 启动训练，每个 Curator 从新 Actor 子会话的轨迹初始化、修订模块化技能库。默认每题每批两次、演化两轮；训练完成后，每个 Group 按完整训练均分选择一版有效技能库，平分选更早阶段，冻结后与无 Skill 基线各进行三次完整测试。这是实验采用的版本选择规则，测试反馈不参与选版。评测遵循已发布的连续训练契约，按完整测试重复的均分计算平均数与样本标准差；做题时的技能选择依赖指令执行，已读取的正文保留在历史中，不宣称复现论文的逐轮上下文替换。
+- **[MCE](https://arxiv.org/abs/2601.21557)**（`mce-rsi-toolkit`）：Meta Context Engineering 把上下文工程的方法本身变成可学习的对象。每一轮由新的 meta-agent 阅读之前的学习 Skill、它们产出的上下文和得分，通过 agentic crossover 写出下一版学习 Skill；上下文工程师在训练 rollout 上执行它，从目前最好的上下文继续更新。上下文是一个结构不限的 Skill 文件夹，Solver 在任务开始时读取。默认三轮之后，冻结验证得分最高的上下文，与无 Skill 基线比较。没有独立验证集时，验证复用 Train。
 
 OPRO 与 APE 各自带一个小型演示任务：只要提出来，Skill 会先新建一个 Agent 和一套 6 题的 Benchmark 再开始。每个 Skill 都写明论文的默认参数和一档更小的冒烟预算；除非你要求，它从不按论文的完整预算运行。
 
@@ -255,5 +256,6 @@ Optimizer 改动 Reference State 之前，会先确保 Reference 版本对应的
 | `skillopt-rsi-toolkit` | `skillopt-rsi-toolkit` | SkillOpt RSI 工具包：限制编辑幅度，按评分选择技能。 |
 | `openskill-rsi-toolkit` | `openskill-rsi-toolkit` | OpenSkill RSI 工具包：通过检索与虚拟测试学习技能。 |
 | `trace-rsi-toolkit` | `trace-rsi-toolkit` | 运行 TRACE：对比轨迹演化技能库，评测冻结后的技能 |
+| `mce-rsi-toolkit` | `mce-rsi-toolkit` | 运行 MCE：进化上下文工程 Skill，评测选出的上下文 |
 
 Skill 如何组织和安装，见[技能与插件](/skills)。

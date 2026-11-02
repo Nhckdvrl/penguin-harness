@@ -21,6 +21,8 @@ import awmIcon from "../../../../../plugins/awm-rsi-toolkit/icon.svg?raw";
 import awmPkg from "../../../../../plugins/awm-rsi-toolkit/package.json";
 import defaultIcon from "../../../../../plugins/default-rsi-toolkit/icon.svg?raw";
 import defaultPkg from "../../../../../plugins/default-rsi-toolkit/package.json";
+import mceIcon from "../../../../../plugins/mce-rsi-toolkit/icon.svg?raw";
+import mcePkg from "../../../../../plugins/mce-rsi-toolkit/package.json";
 import openskillIcon from "../../../../../plugins/openskill-rsi-toolkit/icon.svg?raw";
 import openskillPkg from "../../../../../plugins/openskill-rsi-toolkit/package.json";
 import oproIcon from "../../../../../plugins/opro-rsi-toolkit/icon.svg?raw";
@@ -116,6 +118,13 @@ export function rsiToolkitPlugins(): PluginItem[] {
       skill(
         "agent-optimization",
         "Improve an Agent State through versioned scores and score-linked Traces from a frozen Benchmark.",
+      ),
+    ]),
+    libraryPlugin(mcePkg, mceIcon, [
+      skill(
+        "mce-rsi-toolkit",
+        "Run Meta Context Engineering on selected Project Benchmarks by evolving a context-engineering Skill across iterations, letting it build the solving context from training rollouts, selecting the context by validation score and testing frozen baseline and final States.",
+        "2026.11.02.1",
       ),
     ]),
     libraryPlugin(openskillPkg, openskillIcon, [

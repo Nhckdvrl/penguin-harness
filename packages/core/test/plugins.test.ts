@@ -350,6 +350,7 @@ describe("groupPlugins / loadPluginGroups", () => {
       "ape-rsi-toolkit",
       "awm-rsi-toolkit",
       "default-rsi-toolkit",
+      "mce-rsi-toolkit",
       "openskill-rsi-toolkit",
       "opro-rsi-toolkit",
       "skilladam-rsi-toolkit",
