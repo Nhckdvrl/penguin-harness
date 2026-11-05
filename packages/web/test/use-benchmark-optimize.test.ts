@@ -1,15 +1,15 @@
 // @vitest-environment jsdom
 /**
- * The Use dialog's Optimize tab (features/benchmark/use-benchmark-modal.tsx) under the toolkits of
- * both protocols, read from the plugin library the dialog fetches.
+ * The Use dialog's Optimize tab (features/benchmark/use-benchmark-modal.tsx) under the toolkits the
+ * plugin library lists: Default, a toolkit that optimizes against one Benchmark (OPRO) and one that
+ * learns on a Train/Test pair (SkillOpt).
  *
- * - Given a toolkit that learns on a Train/Test pair, the tab asks for test repetitions in place
- *   of runs per case, says which packages the method uses, and the conversation it opens carries
- *   that toolkit's Train/Test tail with the repetitions and only its Skill preselected.
- * - Given a toolkit that optimizes against one Benchmark, the tab keeps runs per case and the
- *   conversation carries the one-Benchmark tail, as before.
- * - Given test repetitions out of range, the tab says so under the field and does not open the
- *   conversation.
+ * - Given any toolkit other than Default, of either kind, the tab asks for no runs per case, says
+ *   the method runs as its Skill defines it, and the conversation it opens carries the same
+ *   method-neutral tail with only that toolkit's Skill preselected and no count of the tab's own.
+ * - Given a budget the user wants, it reaches the toolkit through Focus, ahead of the tail.
+ * - Given Default, the tab keeps runs per case, the round limit and the target score.
+ * - Given runs per case left out of range on Default, a toolkit that takes none still opens.
  */
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { createElement as h } from "react";
@@ -64,7 +64,7 @@ const LIBRARY = {
       plugins: [
         toolkit(DEFAULT_TOOLKIT_PLUGIN),
         toolkit("opro-rsi-toolkit"),
-        toolkit("skillopt-rsi-toolkit", { rsiProtocol: "train-test" }),
+        toolkit("skillopt-rsi-toolkit"),
       ],
     },
   ],
@@ -180,51 +180,61 @@ afterEach(async () => {
 });
 
 describe("the Optimize tab", () => {
-  it("asks a Train/Test toolkit for test repetitions and hands it the Train/Test tail", async () => {
+  for (const method of ["opro-rsi-toolkit", "skillopt-rsi-toolkit"]) {
+    it(`hands ${method} the method-neutral tail and asks for no runs`, async () => {
+      const router = await openOptimize();
+      await pickMethod(method);
+
+      expect(hasField(S.benchmark.runsField)).toBe(false);
+      expect(hasField(S.benchmark.roundLimitField)).toBe(false);
+      expect(hasField(S.benchmark.targetScoreField)).toBe(false);
+      expect(document.body.textContent).toContain(S.benchmark.methodBudgetHint);
+
+      await click(button(S.aiCreate.editInChat));
+      await waitFor(() => router.state.location.pathname.startsWith("/chat/"), 40);
+
+      const draft = loadDraft(DRAFT_KEY);
+      expect(draft.agentId).toBe(AGENT_ID);
+      expect(draft.skills).toEqual([method]);
+      expect(draft.text).toBe(
+        S.benchmark.rsiOptimizeTail({
+          skill: method,
+          targetAgentId: AGENT_ID,
+          benchmarkId: TEST_PACKAGE,
+        }),
+      );
+    });
+  }
+
+  it("passes a budget the user asks for through Focus", async () => {
     const router = await openOptimize();
     await pickMethod("skillopt-rsi-toolkit");
 
-    expect(hasField(S.benchmark.testRepetitionsField)).toBe(true);
-    expect(hasField(S.benchmark.runsField)).toBe(false);
-    expect(field(S.benchmark.testRepetitionsField).value).toBe("3");
-    expect(document.body.textContent).toContain(S.benchmark.methodTrainTestHint);
-
-    await type(field(S.benchmark.testRepetitionsField), "5");
+    await type(field(S.benchmark.focusField), "Test each frozen State 5 times.");
     await click(button(S.aiCreate.editInChat));
     await waitFor(() => router.state.location.pathname.startsWith("/chat/"), 40);
 
     const draft = loadDraft(DRAFT_KEY);
-    expect(draft.agentId).toBe(AGENT_ID);
-    expect(draft.skills).toEqual(["skillopt-rsi-toolkit"]);
+    expect(draft.text?.startsWith("Test each frozen State 5 times.")).toBe(true);
     expect(draft.text).toContain("`skillopt-rsi-toolkit`");
-    expect(draft.text).toContain(`\`benchmarks/${TEST_PACKAGE}/\``);
-    expect(draft.text).toMatch(/test_repetitions[：:] ?`5`/);
-    expect(draft.text).not.toMatch(/^- runs[：:]/m);
   });
 
-  it("keeps runs per case for a toolkit that optimizes against one Benchmark", async () => {
-    const router = await openOptimize();
+  it("keeps runs per case, the round limit and the target score for Default", async () => {
+    await openOptimize();
+
+    expect(field(S.benchmark.runsField).value).toBe("1");
+    expect(hasField(S.benchmark.roundLimitField)).toBe(true);
+    expect(hasField(S.benchmark.targetScoreField)).toBe(true);
+    expect(document.body.textContent).not.toContain(S.benchmark.methodBudgetHint);
+  });
+
+  it("opens a toolkit's conversation even with Default's runs per case out of range", async () => {
+    await openOptimize();
+    await type(field(S.benchmark.runsField), "0");
+    expect(button(S.aiCreate.editInChat).disabled).toBe(true);
+
     await pickMethod("opro-rsi-toolkit");
 
-    expect(hasField(S.benchmark.runsField)).toBe(true);
-    expect(hasField(S.benchmark.testRepetitionsField)).toBe(false);
-    expect(document.body.textContent).toContain(S.benchmark.methodBudgetHint);
-
-    await click(button(S.aiCreate.editInChat));
-    await waitFor(() => router.state.location.pathname.startsWith("/chat/"), 40);
-    const draft = loadDraft(DRAFT_KEY);
-    expect(draft.skills).toEqual(["opro-rsi-toolkit"]);
-    expect(draft.text).toMatch(/^- runs[：:] ?`1`/m);
-    expect(draft.text).not.toContain("test_repetitions");
-  });
-
-  it("refuses test repetitions out of range", async () => {
-    await openOptimize();
-    await pickMethod("skillopt-rsi-toolkit");
-
-    await type(field(S.benchmark.testRepetitionsField), "0");
-
-    expect(document.body.textContent).toContain(S.benchmark.invalidRuns);
-    expect(button(S.aiCreate.editInChat).disabled).toBe(true);
+    expect(button(S.aiCreate.editInChat).disabled).toBe(false);
   });
 });
