@@ -17,4 +17,4 @@
 
 ## 打包
 
-插件已登记到 core、CLI、桌面端、中英文插件目录、自我进化 / Skill / 评测中心 / 简介文档、官网算法清单和 UI Gallery 演示。插件带有库内其他 Skill 插件同样运行的 SKILL.md 解析检查。评测参考沿用 SkillOpt 的版本，以验证取代候选筛选。
+插件在 `src/index.ts` 中声明卡片与 Skill，已登记到 server、CLI、桌面端、landing 打包、中英文插件目录、自我进化 / Skill / 评测中心 / 简介文档、官网算法清单和 UI Gallery 演示。插件带有库内其他 Skill 插件同样运行的 SKILL.md 解析检查。评测参考沿用 SkillOpt 的版本，以验证取代候选筛选。

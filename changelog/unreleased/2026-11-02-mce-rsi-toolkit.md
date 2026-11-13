@@ -17,4 +17,4 @@ Added `mce-rsi-toolkit`, which runs [Meta Context Engineering](https://arxiv.org
 
 ## Packaging
 
-Registered the plugin for core, CLI and desktop packaging, the bilingual plugin catalogs, the self-improvement, Skills, Evaluation Center and introduction docs, the landing algorithm list and the UI Gallery demo. The plugin carries the SKILL.md parse check the library's other skill plugins run. Its evaluation reference follows SkillOpt's, with validation in place of selection.
+The plugin declares its card and Skill in `src/index.ts`. Registered it for server, CLI, desktop and landing packaging, the bilingual plugin catalogs, the self-improvement, Skills, Evaluation Center and introduction docs, the landing algorithm list and the UI Gallery demo. The plugin carries the SKILL.md parse check the library's other skill plugins run. Its evaluation reference follows SkillOpt's, with validation in place of selection.

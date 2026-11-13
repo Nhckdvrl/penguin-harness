@@ -8,6 +8,10 @@
     "skills"
   ],
   "license": "Apache-2.0",
+  "author": {
+    "name": "Prism-Shadow",
+    "url": "https://github.com/Prism-Shadow"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Prism-Shadow/penguin-harness.git",
@@ -16,29 +20,18 @@
   "files": [
     "icon.svg",
     "skills",
+    "ifaces.json",
     "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
   },
-  "penguin": {
-    "description_zh": "MCE RSI 工具包：同时进化上下文工程 Skill 与它产出的上下文，按验证得分选出上下文，再比较冻结的 baseline 与 final。",
-    "short_description": "MCE RSI Toolkit: evolve the context-engineering Skill itself.",
-    "short_description_zh": "MCE RSI 工具包：进化上下文工程 Skill 本身。",
-    "category": "rsi",
-    "icon": "icon.svg",
-    "quick_start": {
-      "prompt": "Read mce-rsi-toolkit and run an MCE experiment on the selected Benchmarks with the requested model and budget.",
-      "prompt_zh": "读取 mce-rsi-toolkit，按指定模型和预算，在选定的 Benchmark 上完成 MCE 实验。",
-      "skills": [
-        "mce-rsi-toolkit"
-      ]
-    }
-  },
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "build": "node ../../scripts/gen-ifaces.mjs --project tsconfig.json --out ifaces.json"
   },
   "devDependencies": {
+    "@prismshadow/penguin-core": "workspace:*",
     "@prismshadow/skills": "workspace:*",
     "vitest": "^4.1.12"
   }
