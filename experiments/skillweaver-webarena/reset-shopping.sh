@@ -3,6 +3,8 @@
 # shopping_final_0712, and set the store's base URL (WebArena's environment_docker/README.md).
 # Usage: bash reset-shopping.sh [http://localhost:7770]
 set -euo pipefail
+# Git Bash must pass Linux container paths through to the Windows Docker CLI unchanged.
+export MSYS2_ARG_CONV_EXCL="*"
 HOST_URL="${1:-http://localhost:7770}"
 HOST_URL="${HOST_URL%/}"
 PORT="${HOST_URL##*:}"
