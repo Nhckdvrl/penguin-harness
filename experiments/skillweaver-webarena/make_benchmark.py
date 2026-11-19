@@ -54,7 +54,7 @@ def statement(t, site_url):
         "",
         "## How to answer",
         "",
-        "Start from the specified page. Access this website only with `penguin browser` and any registered SkillWeaver APIs that invoke it. Do not use `curl`, `wget`, standalone HTTP clients, other browser tools, or direct requests from browser scripts, including for verification or fallback. Keep your Agent State, including memory, read-only. Do not sign out, change the account, or buy anything.",
+        "Start from the specified page. Access this website only with `penguin browser` and any registered SkillWeaver APIs that invoke it. Do not use `curl`, `wget`, standalone HTTP clients or other browser tools, including for verification or fallback. Browser scripts remain within the site's origin. Keep your Agent State, including memory, read-only. Do not sign out, change the account, or buy anything.",
     ]
     if answer_task:
         lines.append(
