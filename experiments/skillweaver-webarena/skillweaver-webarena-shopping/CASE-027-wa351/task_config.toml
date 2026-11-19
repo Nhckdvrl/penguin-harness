@@ -1,0 +1,6 @@
+id = "CASE-027-wa351"
+title = "WebArena Shopping task 351"
+description = "List products from PS4 accessories category by ascending price"
+
+[budget]
+timeout = 900

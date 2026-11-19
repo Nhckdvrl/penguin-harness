@@ -1,0 +1,6 @@
+id = "CASE-015-wa260"
+title = "WebArena Shopping task 260"
+description = "I want to browse the products in the Video Game category"
+
+[budget]
+timeout = 900

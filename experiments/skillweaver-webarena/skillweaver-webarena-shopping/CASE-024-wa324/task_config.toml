@@ -1,0 +1,6 @@
+id = "CASE-024-wa324"
+title = "WebArena Shopping task 324"
+description = "Show me the \"chairs\" listings by ascending price."
+
+[budget]
+timeout = 900

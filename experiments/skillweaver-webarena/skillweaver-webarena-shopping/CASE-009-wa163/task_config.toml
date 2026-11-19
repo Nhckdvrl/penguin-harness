@@ -1,0 +1,6 @@
+id = "CASE-009-wa163"
+title = "WebArena Shopping task 163"
+description = "What are the main criticisms of this product? Please extract the relevant sentences."
+
+[budget]
+timeout = 900

@@ -1,0 +1,6 @@
+id = "CASE-013-wa231"
+title = "WebArena Shopping task 231"
+description = "Get the order number of my most recent cancelled order "
+
+[budget]
+timeout = 900

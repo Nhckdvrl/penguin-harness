@@ -1,0 +1,6 @@
+id = "CASE-014-wa238"
+title = "WebArena Shopping task 238"
+description = "I am doing a market survey for one stop market, show me the most expensive product from PS4 accessories category"
+
+[budget]
+timeout = 900

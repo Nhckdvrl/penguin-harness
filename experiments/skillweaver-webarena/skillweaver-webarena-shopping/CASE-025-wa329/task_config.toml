@@ -1,0 +1,6 @@
+id = "CASE-025-wa329"
+title = "WebArena Shopping task 329"
+description = "How much I spend on 4/19/2023 on shopping at One Stop Market?"
+
+[budget]
+timeout = 900

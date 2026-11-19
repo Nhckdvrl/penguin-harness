@@ -1,0 +1,6 @@
+id = "CASE-020-wa284"
+title = "WebArena Shopping task 284"
+description = "Show the least expensive shoe storage with a minimum storage capacity of 12 pairs."
+
+[budget]
+timeout = 900

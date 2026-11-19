@@ -1,0 +1,6 @@
+id = "CASE-029-wa368"
+title = "WebArena Shopping task 368"
+description = "find discounted items."
+
+[budget]
+timeout = 900

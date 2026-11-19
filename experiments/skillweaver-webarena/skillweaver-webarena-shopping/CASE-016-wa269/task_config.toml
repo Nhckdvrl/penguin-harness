@@ -1,0 +1,6 @@
+id = "CASE-016-wa269"
+title = "WebArena Shopping task 269"
+description = "Show me products under $25 in \"women shoes\" category"
+
+[budget]
+timeout = 900

@@ -1,0 +1,6 @@
+id = "CASE-018-wa279"
+title = "WebArena Shopping task 279"
+description = "Provide me with the complete names of Bluetooth headphones from Sony, and also share the price range for the available models"
+
+[budget]
+timeout = 900

@@ -1,0 +1,6 @@
+id = "CASE-004-wa117"
+title = "WebArena Shopping task 117"
+description = "What is the date when I made my first purchase on this site?"
+
+[budget]
+timeout = 900

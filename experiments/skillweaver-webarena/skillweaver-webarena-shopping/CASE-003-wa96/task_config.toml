@@ -1,0 +1,6 @@
+id = "CASE-003-wa96"
+title = "WebArena Shopping task 96"
+description = "Tell me the status of my latest order and when will it arrive"
+
+[budget]
+timeout = 900

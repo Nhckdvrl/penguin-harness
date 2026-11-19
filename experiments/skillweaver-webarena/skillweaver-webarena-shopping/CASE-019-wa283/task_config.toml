@@ -1,0 +1,6 @@
+id = "CASE-019-wa283"
+title = "WebArena Shopping task 283"
+description = "Look up the most recent models of XBox controllers released between 2020-2021?"
+
+[budget]
+timeout = 900

@@ -1,0 +1,6 @@
+id = "CASE-008-wa158"
+title = "WebArena Shopping task 158"
+description = "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 11 cards"
+
+[budget]
+timeout = 900

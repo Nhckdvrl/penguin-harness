@@ -1,0 +1,6 @@
+id = "CASE-017-wa274"
+title = "WebArena Shopping task 274"
+description = "Search for \"usb wifi\""
+
+[budget]
+timeout = 900

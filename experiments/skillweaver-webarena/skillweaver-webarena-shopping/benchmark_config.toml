@@ -1,0 +1,9 @@
+id = "skillweaver-webarena-shopping"
+title = "WebArena Shopping subset for SkillWeaver"
+description = "30 WebArena Shopping (OneStopShop) tasks scored from the final answer or the final page URL, one per intent template, the first by task_id; web-arena-x/webarena@dce04686a56253aefba7b18a4fa0937cf1dc987b."
+version = "0.1.0"
+status = "published"
+
+[author]
+name = "Nhckdvrl"
+homepage = "https://github.com/Nhckdvrl"

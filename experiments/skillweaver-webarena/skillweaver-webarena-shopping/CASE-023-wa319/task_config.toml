@@ -1,0 +1,6 @@
+id = "CASE-023-wa319"
+title = "WebArena Shopping task 319"
+description = "How much refund I should expect from my order canlled in April 2022, including shipping fee"
+
+[budget]
+timeout = 900
