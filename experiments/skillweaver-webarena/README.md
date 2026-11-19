@@ -1,5 +1,7 @@
 # SkillWeaver 实验：WebArena Shopping（Windows 上运行）
 
+> **接手的智能体请先读 [`HANDOFF.md`](HANDOFF.md)**：目标、背景、审阅标准、已知风险和判断原则都在那里。本文件只讲环境搭建和运行步骤。
+
 这个分支 = SkillWeaver 插件代码（与 PR 分支 `feat/skillweaver-rsi-toolkit` 相同）+ 本目录的实验材料。实验材料不进 PR。
 
 ## 目录内容
