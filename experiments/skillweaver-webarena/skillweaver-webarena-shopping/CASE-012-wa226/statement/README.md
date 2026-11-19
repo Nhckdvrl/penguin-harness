@@ -9,5 +9,5 @@ What is the price range for products from Amazon basic?
 
 ## How to answer
 
-Work in the agent browser with `penguin browser`, on this website only, starting from the start page. Do not sign out, change the account, or buy anything.
+Start from the specified page. Access this website only with `penguin browser` and any registered SkillWeaver APIs that invoke it. Do not use `curl`, `wget`, standalone HTTP clients, other browser tools, or direct requests from browser scripts, including for verification or fallback. Keep your Agent State, including memory, read-only. Do not sign out, change the account, or buy anything.
 End your final reply with one line `ANSWER: <your answer>`. If the task cannot be done on this website, answer `ANSWER: N/A` and say why in one sentence above it.
