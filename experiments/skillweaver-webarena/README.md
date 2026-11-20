@@ -12,7 +12,7 @@
 | `skillweaver-webarena-shopping/` | 生成好的 Benchmark：30 题，其中 20 道答案题、10 道页面题 |
 | `skillweaver-webarena-shopping.manifest.json` | 题目清单、选题规则、WebArena 提交号和源文件哈希 |
 | `skillweaver-webarena-shopping.zip` | 同一个 Benchmark 的压缩包，可在评测中心上传（已用服务端导入代码验证过） |
-| `reset-shopping.sh` | 把 Shopping 站重置为镜像初始状态（在 Git Bash 里运行） |
+| `reset-shopping.sh` | 把 Shopping 站重置为镜像初始状态，并在启动前禁用容器的计划维护（在 Git Bash 里运行） |
 
 选题规则：
 - 只取 Shopping 单站点的任务，评测类型限 `string_match` / `url_match`，即能从最终答案或最终页面 URL 判分的题；

@@ -11,7 +11,15 @@ PORT="${HOST_URL##*:}"
 IMAGE=shopping_final_0712
 docker image inspect "$IMAGE" >/dev/null 2>&1 || { echo "image $IMAGE not loaded: docker load --input shopping_final_0712.tar" >&2; exit 2; }
 docker rm -f shopping >/dev/null 2>&1 || true
-docker run --name shopping -p "127.0.0.1:$PORT:80" -d "$IMAGE" >/dev/null
+# Prevent Magento's scheduled cleanup from deleting seeded carts during a long measurement.
+# Keep the image entrypoint and all storefront services, but leave cron out of Supervisor's *.ini include.
+docker run --name shopping -p "127.0.0.1:$PORT:80" -d "$IMAGE" sh -ec '
+  if [ -f /etc/supervisor.d/cron.ini ]; then
+    mv /etc/supervisor.d/cron.ini /etc/supervisor.d/cron.disabled
+  fi
+  test -f /etc/supervisor.d/cron.disabled
+  exec supervisord -n -j /supervisord.pid
+' >/dev/null
 echo "waiting for MySQL in the container..."
 for _ in $(seq 1 90); do
   docker exec shopping mysql -u magentouser -pMyPassword magentodb -e 'select 1' >/dev/null 2>&1 && break
@@ -30,4 +38,10 @@ if [ "$status" != 200 ]; then
   echo "shopping did not become ready at $HOST_URL (HTTP ${status:-none})" >&2
   exit 3
 fi
+services="$(docker exec shopping supervisorctl status)"
+if grep -q '^cron[[:space:]]' <<<"$services"; then
+  echo "shopping cron is still configured; the reset is invalid" >&2
+  exit 4
+fi
+echo "scheduled maintenance disabled before startup"
 echo "reset done $(date -u +%Y-%m-%dT%H:%M:%SZ) image $(docker image inspect "$IMAGE" --format '{{.Id}}') url $HOST_URL"
