@@ -44,6 +44,15 @@ bash experiments/skillweaver-webarena/reset-shopping.sh http://localhost:7770
 
 最后一行出现 `reset done …`，浏览器打开 http://localhost:7770 能看到 One Stop Market 首页，就说明站点起来了。
 
+每次正式测量前，在重置后登录同一个 WebArena 测试客户，留在项目浏览器的账号页面，再执行下述初始化。站点在首次查看结账页面时可能把地址簿中的默认地址附到现有购物车。两边均在采集数据库初始指纹前完成这一步，避免把站点的延迟初始化混入测量。
+
+```bash
+penguin browser exec --tab "$TAB_ID" --json --no-monitor < experiments/skillweaver-webarena/prime-shopping.js
+penguin browser exec --tab "$TAB_ID" --json --no-monitor < experiments/skillweaver-webarena/prime-shopping.js
+```
+
+`TAB_ID` 是已登录的项目账号页标签。两次执行都应返回四条同站路径。核验两次访问后，测试客户的活动购物车都有同样的已保存账单和收货地址，商品条目和数量保持不变。保存核验证据，再开始本阶段的测量。
+
 ## 3. 启动 PenguinHarness
 
 ```bash
