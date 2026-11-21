@@ -44,6 +44,8 @@ bash experiments/skillweaver-webarena/reset-shopping.sh http://localhost:7770
 
 最后一行出现 `reset done …`，浏览器打开 http://localhost:7770 能看到 One Stop Market 首页，就说明站点起来了。
 
+> **当前正式实验不使用这一步**（见 HANDOFF.md 3.1、3.2）。正式基线 `sw_shop_formal_r2` 的 H1 没有做预热，最终测量必须使用同一流程：重置、登录，然后直接测量。购物车里的变化不影响任何题目，记录下来即可。下面的脚本只作为备用记录保留。
+
 每次正式测量前，在重置后登录同一个 WebArena 测试客户，留在项目浏览器的账号页面，再执行下述初始化。站点在首次查看结账页面时可能把地址簿中的默认地址附到现有购物车。两边均在采集数据库初始指纹前完成这一步，避免把站点的延迟初始化混入测量。
 
 ```bash
