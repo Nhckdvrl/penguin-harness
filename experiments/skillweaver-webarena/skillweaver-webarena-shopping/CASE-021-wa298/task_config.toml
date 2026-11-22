@@ -1,0 +1,6 @@
+id = "CASE-021-wa298"
+title = "WebArena Shopping task 298"
+description = "Show the most recent completed order"
+
+[budget]
+timeout = 900

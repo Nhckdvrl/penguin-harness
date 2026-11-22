@@ -1,0 +1,6 @@
+id = "CASE-007-wa146"
+title = "WebArena Shopping task 146"
+description = "What is the size configuration of the picture frame I bought Sep 2022"
+
+[budget]
+timeout = 900

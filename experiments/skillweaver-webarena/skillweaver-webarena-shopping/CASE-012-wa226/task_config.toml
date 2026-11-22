@@ -1,0 +1,6 @@
+id = "CASE-012-wa226"
+title = "WebArena Shopping task 226"
+description = "What is the price range for products from Amazon basic?"
+
+[budget]
+timeout = 900

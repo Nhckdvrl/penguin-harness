@@ -1,0 +1,4 @@
+Store fixture initialization completed at 2026-11-20T22:15:01.9444936Z.
+Used form-free GET requests within http://localhost:7770 only.
+Pages: /checkout/cart/ /customer/address/ /multishipping/checkout/ /checkout/cart/, twice.
+Seeded cart 255: 3 items before and after; saved-address types 0 -> 2 -> 2; stable quote-address row count 2.

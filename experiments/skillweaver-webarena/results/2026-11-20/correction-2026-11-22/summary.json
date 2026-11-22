@@ -1,0 +1,614 @@
+{
+  "original": {
+    "passed": [
+      59,
+      59
+    ],
+    "score": [
+      65.55555555555556,
+      65.55555555555556
+    ],
+    "repetition_stdev": [
+      1.9245008972987538,
+      3.8490017945975037
+    ],
+    "all_correct_cases": [
+      16,
+      16
+    ],
+    "paired": {
+      "improved": 9,
+      "declined": 9,
+      "same": 72
+    },
+    "case_deltas": {
+      "CASE-001-wa21": 0.0,
+      "CASE-002-wa47": 0.0,
+      "CASE-003-wa96": 0.0,
+      "CASE-004-wa117": 0.0,
+      "CASE-005-wa124": 0.0,
+      "CASE-006-wa141": 0.0,
+      "CASE-007-wa146": 0.0,
+      "CASE-008-wa158": 0.0,
+      "CASE-009-wa163": 0.0,
+      "CASE-010-wa188": 0.0,
+      "CASE-011-wa225": -33.33333333333333,
+      "CASE-012-wa226": -66.66666666666667,
+      "CASE-013-wa231": 0.0,
+      "CASE-014-wa238": 66.66666666666666,
+      "CASE-015-wa260": 0.0,
+      "CASE-016-wa269": 33.333333333333336,
+      "CASE-017-wa274": 0.0,
+      "CASE-018-wa279": 0.0,
+      "CASE-019-wa283": -33.333333333333336,
+      "CASE-020-wa284": 0.0,
+      "CASE-021-wa298": 0.0,
+      "CASE-022-wa313": 33.33333333333333,
+      "CASE-023-wa319": 0.0,
+      "CASE-024-wa324": 66.66666666666667,
+      "CASE-025-wa329": -33.333333333333336,
+      "CASE-026-wa334": 0.0,
+      "CASE-027-wa351": -33.33333333333333,
+      "CASE-028-wa358": 0.0,
+      "CASE-029-wa368": 0.0,
+      "CASE-030-wa376": 0.0
+    }
+  },
+  "corrected": {
+    "passed": [
+      56,
+      56
+    ],
+    "score": [
+      62.22222222222222,
+      62.22222222222222
+    ],
+    "repetition_stdev": [
+      1.9245008972987538,
+      1.9245008972987538
+    ],
+    "all_correct_cases": [
+      16,
+      15
+    ],
+    "paired": {
+      "improved": 7,
+      "declined": 7,
+      "same": 76
+    },
+    "case_deltas": {
+      "CASE-001-wa21": 0.0,
+      "CASE-002-wa47": 0.0,
+      "CASE-003-wa96": 0.0,
+      "CASE-004-wa117": 0.0,
+      "CASE-005-wa124": 0.0,
+      "CASE-006-wa141": 0.0,
+      "CASE-007-wa146": 0.0,
+      "CASE-008-wa158": 0.0,
+      "CASE-009-wa163": 0.0,
+      "CASE-010-wa188": 0.0,
+      "CASE-011-wa225": -33.33333333333333,
+      "CASE-012-wa226": -66.66666666666667,
+      "CASE-013-wa231": 0.0,
+      "CASE-014-wa238": 66.66666666666666,
+      "CASE-015-wa260": 0.0,
+      "CASE-016-wa269": 33.333333333333336,
+      "CASE-017-wa274": 0.0,
+      "CASE-018-wa279": 0.0,
+      "CASE-019-wa283": -33.333333333333336,
+      "CASE-020-wa284": 0.0,
+      "CASE-021-wa298": 0.0,
+      "CASE-022-wa313": 33.33333333333333,
+      "CASE-023-wa319": 0.0,
+      "CASE-024-wa324": 66.66666666666667,
+      "CASE-025-wa329": 0.0,
+      "CASE-026-wa334": 0.0,
+      "CASE-027-wa351": -33.33333333333333,
+      "CASE-028-wa358": 0.0,
+      "CASE-029-wa368": -33.33333333333333,
+      "CASE-030-wa376": 0.0
+    }
+  },
+  "attempts": 17,
+  "rerun_usage": {
+    "requests": 1143,
+    "cache_read": 58186496,
+    "cache_write": 2267292,
+    "output": 587016,
+    "total_tokens": 61040804,
+    "started_utc": "2026-11-22T04:00:40.562Z",
+    "ended_utc": "2026-11-22T08:20:25.245Z",
+    "model_sessions": 28,
+    "summed_session_s": 16042
+  },
+  "target_usage": {
+    "requests": 1075,
+    "cache_read": 56934400,
+    "cache_write": 1786522,
+    "output": 552571,
+    "total_tokens": 59273493,
+    "started_utc": "2026-11-22T04:00:40.562Z",
+    "ended_utc": "2026-11-22T08:18:21.536Z",
+    "model_sessions": 17,
+    "summed_session_s": 15583
+  },
+  "grading_usage": {
+    "requests": 68,
+    "cache_read": 1252096,
+    "cache_write": 480770,
+    "output": 34445,
+    "total_tokens": 1767311,
+    "started_utc": "2026-11-22T04:21:42.767Z",
+    "ended_utc": "2026-11-22T08:20:25.245Z",
+    "model_sessions": 11,
+    "summed_session_s": 459
+  },
+  "total_formal_requests": 21968,
+  "total_formal_tokens": 910936117,
+  "evidence_sha256": "bfd0e633219f4aca6bf9ac6470d65e9f428707029adaa6a12a1137dd30e2dc06",
+  "target_attempts": [
+    {
+      "phase": "Final",
+      "case": "CASE-022-wa313",
+      "run": 1,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-12-40-00-fa7ca433",
+      "usage": {
+        "requests": 47,
+        "cache_read": 2072832,
+        "cache_write": 75584,
+        "output": 13089,
+        "total_tokens": 2161505,
+        "started_utc": "2026-11-22T04:40:00.292Z",
+        "ended_utc": "2026-11-22T04:45:15.248Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [
+        "exec_command call 42 reaches https://api.github.com",
+        "exec_command call 43 reaches https://api.github.com",
+        "exec_command call 44 reaches https://api.github.com",
+        "exec_command call 45 reaches https://raw.githubusercontent.com",
+        "exec_command call 45 names forbidden test.raw.json",
+        "exec_command call 45 names forbidden test_raw.json",
+        "exec_command call 46 names forbidden test_raw.json",
+        "exec_command call 47 names forbidden test_raw.json"
+      ],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-022-wa313",
+      "run": 1,
+      "attempt": 2,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-12-45-30-2bb1e0ac",
+      "usage": {
+        "requests": 154,
+        "cache_read": 9590784,
+        "cache_write": 195799,
+        "output": 62511,
+        "total_tokens": 9849094,
+        "started_utc": "2026-11-22T04:45:31.436Z",
+        "ended_utc": "2026-11-22T05:09:42.141Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-022-wa313",
+      "run": 2,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-13-10-31-1b44801a",
+      "usage": {
+        "requests": 97,
+        "cache_read": 5679872,
+        "cache_write": 160967,
+        "output": 56446,
+        "total_tokens": 5897285,
+        "started_utc": "2026-11-22T05:10:32.096Z",
+        "ended_utc": "2026-11-22T05:30:17.452Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-022-wa313",
+      "run": 3,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-13-31-06-b6fd828b",
+      "usage": {
+        "requests": 78,
+        "cache_read": 4946176,
+        "cache_write": 151496,
+        "output": 50560,
+        "total_tokens": 5148232,
+        "started_utc": "2026-11-22T05:31:07.400Z",
+        "ended_utc": "2026-11-22T05:48:56.349Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-023-wa319",
+      "run": 3,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-13-49-53-a06fcd07",
+      "usage": {
+        "requests": 68,
+        "cache_read": 4766208,
+        "cache_write": 139659,
+        "output": 38062,
+        "total_tokens": 4943929,
+        "started_utc": "2026-11-22T05:49:54.626Z",
+        "ended_utc": "2026-11-22T06:07:54.307Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [
+        "exec_command call 27 reaches https://github.com",
+        "exec_command call 34 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 36 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 37 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 39 reaches https://datasets-server.huggingface.co",
+        "exec_command call 40 reaches https://datasets-server.huggingface.co",
+        "exec_command call 41 reaches https://datasets-server.huggingface.co",
+        "exec_command call 42 reaches https://datasets-server.huggingface.co",
+        "exec_command call 43 reaches https://datasets-server.huggingface.co",
+        "exec_command call 44 reaches https://huggingface.co",
+        "exec_command call 45 reaches https://huggingface.co",
+        "exec_command call 52 names forbidden webarena-dce0468",
+        "exec_command call 53 names forbidden webarena-dce0468",
+        "exec_command call 61 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 62 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 63 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "read_file call 64 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "read_file call 64 names forbidden rubric/README.md",
+        "exec_command call 65 reaches https://raw.githubusercontent.com",
+        "exec_command call 65 names forbidden test.raw.json",
+        "exec_command call 65 names forbidden test_raw.json",
+        "exec_command call 66 names forbidden test_raw.json",
+        "exec_command call 67 names forbidden webarena-dce0468",
+        "write_file call 69 reaches https://huggingface.co",
+        "write_file call 69 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "write_file call 69 names forbidden rubric/README.md",
+        "write_file call 69 names forbidden test.raw.json",
+        "write_file call 69 names forbidden test_raw.json",
+        "write_file call 69 names forbidden webarena-dce0468"
+      ],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-023-wa319",
+      "run": 3,
+      "attempt": 2,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-14-08-05-509eecca",
+      "usage": {
+        "requests": 40,
+        "cache_read": 2222848,
+        "cache_write": 100661,
+        "output": 31715,
+        "total_tokens": 2355224,
+        "started_utc": "2026-11-22T06:08:05.407Z",
+        "ended_utc": "2026-11-22T06:17:23.289Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [
+        "exec_command call 28 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 29 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 29 names forbidden rubric/README.md",
+        "exec_command call 30 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 31 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 31 names forbidden rubric/README.md",
+        "exec_command call 32 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 33 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\benchmarks\\skillweaver-webarena-shopping",
+        "exec_command call 35 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 36 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 37 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 38 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 39 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces",
+        "exec_command call 40 names forbidden <EXPERIMENT_ROOT>\\penguin-data\\default_project\\agents\\sw_shop_formal_r2\\traces"
+      ],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-023-wa319",
+      "run": 3,
+      "attempt": 3,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-14-17-35-5cb8fc65",
+      "usage": {
+        "requests": 21,
+        "cache_read": 785664,
+        "cache_write": 56086,
+        "output": 6641,
+        "total_tokens": 848391,
+        "started_utc": "2026-11-22T06:17:36.373Z",
+        "ended_utc": "2026-11-22T06:20:11.216Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-029-wa368",
+      "run": 1,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-14-20-46-11cf42e4",
+      "usage": {
+        "requests": 85,
+        "cache_read": 6036992,
+        "cache_write": 151409,
+        "output": 64471,
+        "total_tokens": 6252872,
+        "started_utc": "2026-11-22T06:20:46.781Z",
+        "ended_utc": "2026-11-22T06:54:12.169Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-029-wa368",
+      "run": 2,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-14-56-11-237d7ffd",
+      "usage": {
+        "requests": 134,
+        "cache_read": 7859456,
+        "cache_write": 215432,
+        "output": 98013,
+        "total_tokens": 8172901,
+        "started_utc": "2026-11-22T06:56:11.316Z",
+        "ended_utc": "2026-11-22T07:52:28.287Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-029-wa368",
+      "run": 3,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-15-31-06-2e2b5f02",
+      "usage": {
+        "requests": 82,
+        "cache_read": 4908800,
+        "cache_write": 115832,
+        "output": 31694,
+        "total_tokens": 5056326,
+        "started_utc": "2026-11-22T07:31:06.983Z",
+        "ended_utc": "2026-11-22T07:56:40.165Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-030-wa376",
+      "run": 1,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-15-59-15-18756d97",
+      "usage": {
+        "requests": 19,
+        "cache_read": 620800,
+        "cache_write": 50822,
+        "output": 3775,
+        "total_tokens": 675397,
+        "started_utc": "2026-11-22T07:59:16.661Z",
+        "ended_utc": "2026-11-22T08:01:21.259Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-030-wa376",
+      "run": 2,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-16-03-36-3c53fc2c",
+      "usage": {
+        "requests": 43,
+        "cache_read": 930048,
+        "cache_write": 51435,
+        "output": 12452,
+        "total_tokens": 993935,
+        "started_utc": "2026-11-22T08:03:36.637Z",
+        "ended_utc": "2026-11-22T08:09:38.005Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-030-wa376",
+      "run": 3,
+      "attempt": 1,
+      "state_version": 41,
+      "session_id": "session-2026-11-22-16-11-46-e2c3b9d6",
+      "usage": {
+        "requests": 52,
+        "cache_read": 3428864,
+        "cache_write": 118269,
+        "output": 17996,
+        "total_tokens": 3565129,
+        "started_utc": "2026-11-22T08:11:47.326Z",
+        "ended_utc": "2026-11-22T08:18:21.536Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "H1",
+      "case": "CASE-023-wa319",
+      "run": 1,
+      "attempt": 1,
+      "state_version": 1,
+      "session_id": "session-2026-11-22-12-00-40-712ebcd8",
+      "usage": {
+        "requests": 29,
+        "cache_read": 550144,
+        "cache_write": 47254,
+        "output": 21224,
+        "total_tokens": 618622,
+        "started_utc": "2026-11-22T04:00:40.562Z",
+        "ended_utc": "2026-11-22T04:06:32.127Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [
+        "exec_command call 22 reaches https://api.github.com",
+        "exec_command call 23 reaches https://api.github.com",
+        "exec_command call 24 reaches https://api.github.com",
+        "exec_command call 25 reaches https://api.github.com",
+        "exec_command call 26 reaches https://api.github.com",
+        "exec_command call 27 reaches https://raw.githubusercontent.com",
+        "exec_command call 27 names forbidden test.raw.json",
+        "exec_command call 27 names forbidden webarena_test.json",
+        "exec_command call 28 names forbidden webarena_test.json"
+      ],
+      "manual_review": []
+    },
+    {
+      "phase": "H1",
+      "case": "CASE-023-wa319",
+      "run": 1,
+      "attempt": 2,
+      "state_version": 1,
+      "session_id": "session-2026-11-22-12-06-53-3691ca63",
+      "usage": {
+        "requests": 55,
+        "cache_read": 1467904,
+        "cache_write": 88070,
+        "output": 21040,
+        "total_tokens": 1577014,
+        "started_utc": "2026-11-22T04:06:53.773Z",
+        "ended_utc": "2026-11-22T04:14:23.343Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [
+        "exec_command call 32 reaches https://raw.githubusercontent.com",
+        "exec_command call 32 reaches https://api.github.com",
+        "exec_command call 33 reaches https://api.github.com",
+        "exec_command call 35 reaches https://api.github.com",
+        "exec_command call 40 reaches https://raw.githubusercontent.com",
+        "exec_command call 41 reaches https://raw.githubusercontent.com",
+        "exec_command call 42 reaches https://raw.githubusercontent.com",
+        "exec_command call 44 reaches https://raw.githubusercontent.com",
+        "exec_command call 45 reaches https://raw.githubusercontent.com",
+        "exec_command call 46 reaches https://api.github.com",
+        "exec_command call 47 reaches https://webarena.dev",
+        "exec_command call 48 reaches https://raw.githubusercontent.com",
+        "exec_command call 49 reaches https://raw.githubusercontent.com",
+        "exec_command call 49 names forbidden test.raw.json",
+        "exec_command call 49 names forbidden test_raw.json",
+        "exec_command call 50 names forbidden test_raw.json",
+        "exec_command call 51 names forbidden test_raw.json",
+        "exec_command call 53 names forbidden test_raw.json",
+        "exec_command call 54 names forbidden test_raw.json",
+        "exec_command call 55 names forbidden test_raw.json",
+        "exec_command call 56 reaches https://drive.google.com"
+      ],
+      "manual_review": []
+    },
+    {
+      "phase": "H1",
+      "case": "CASE-023-wa319",
+      "run": 1,
+      "attempt": 3,
+      "state_version": 1,
+      "session_id": "session-2026-11-22-12-14-41-53a2c9ae",
+      "usage": {
+        "requests": 40,
+        "cache_read": 677632,
+        "cache_write": 37577,
+        "output": 11572,
+        "total_tokens": 726781,
+        "started_utc": "2026-11-22T04:14:42.046Z",
+        "ended_utc": "2026-11-22T04:21:35.121Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    },
+    {
+      "phase": "H1",
+      "case": "CASE-025-wa329",
+      "run": 3,
+      "attempt": 1,
+      "state_version": 1,
+      "session_id": "session-2026-11-22-12-25-01-1648b275",
+      "usage": {
+        "requests": 31,
+        "cache_read": 389376,
+        "cache_write": 30170,
+        "output": 11310,
+        "total_tokens": 430856,
+        "started_utc": "2026-11-22T04:25:01.745Z",
+        "ended_utc": "2026-11-22T04:37:42.928Z"
+      },
+      "api_calls": [],
+      "state_problems": [],
+      "trace_problems": [],
+      "manual_review": []
+    }
+  ],
+  "grading_corrections": [
+    {
+      "phase": "H1",
+      "case": "CASE-025-wa329",
+      "run": 2,
+      "session_id": "session-2026-11-21-03-02-21-d94774af",
+      "answer": "$0.00",
+      "worker_score": 100,
+      "score": 0
+    },
+    {
+      "phase": "Final",
+      "case": "CASE-025-wa329",
+      "run": 1,
+      "session_id": "session-2026-11-22-08-56-15-558985e5",
+      "answer": "$0.00",
+      "worker_score": 100,
+      "score": 0
+    }
+  ]
+}

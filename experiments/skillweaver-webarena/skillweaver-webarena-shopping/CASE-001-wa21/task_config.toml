@@ -1,0 +1,6 @@
+id = "CASE-001-wa21"
+title = "WebArena Shopping task 21"
+description = "List out reviewers, if exist, who mention about ear cups being small"
+
+[budget]
+timeout = 900

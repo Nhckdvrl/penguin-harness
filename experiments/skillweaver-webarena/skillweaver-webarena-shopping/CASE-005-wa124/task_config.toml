@@ -1,0 +1,6 @@
+id = "CASE-005-wa124"
+title = "WebArena Shopping task 124"
+description = "What is the price range of wireless earphone in the One Stop Market?"
+
+[budget]
+timeout = 900

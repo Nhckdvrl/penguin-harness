@@ -1,0 +1,6 @@
+id = "CASE-002-wa47"
+title = "WebArena Shopping task 47"
+description = "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past month, and the total amount of money I spent."
+
+[budget]
+timeout = 900

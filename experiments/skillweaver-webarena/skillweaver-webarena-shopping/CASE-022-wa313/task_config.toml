@@ -1,0 +1,6 @@
+id = "CASE-022-wa313"
+title = "WebArena Shopping task 313"
+description = "Which number to call for the customer service?"
+
+[budget]
+timeout = 900

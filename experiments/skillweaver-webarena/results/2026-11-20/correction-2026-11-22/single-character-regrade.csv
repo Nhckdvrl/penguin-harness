@@ -1,0 +1,16 @@
+phase,case,run,session_id,status,answer,tokens,worker_score,deterministic_score
+H1,CASE-023-wa319,1,session-2026-11-21-01-31-06-214eb4dc,replaced (answer leak),"$0.00 — no order from April 2022 was cancelled (both April 2022 orders are Complete), so no refund is expected.","$ 0.00 — no order from april 2022 was cancelled ( both april 2022 orders are complete ) , so no refund is expected .",100,0
+H1,CASE-023-wa319,1,session-2026-11-22-12-14-41-53a2c9ae,replacement,$206.59,$ 206.59,0,0
+H1,CASE-023-wa319,2,session-2026-11-21-01-51-44-8636f0c7,kept,N/A,n/a,0,0
+H1,CASE-023-wa319,3,session-2026-11-21-02-22-35-f5e0979b,kept,N/A,n/a,0,0
+H1,CASE-025-wa329,1,session-2026-11-21-02-48-01-f2dba3ac,kept,$0.00 (no orders were placed on 4/19/2023),$ 0.00 ( no orders were placed on 4/19/2023 ),0,0
+H1,CASE-025-wa329,2,session-2026-11-21-03-02-21-d94774af,kept,$0.00,$ 0.00,100,0
+H1,CASE-025-wa329,3,session-2026-11-21-03-08-57-930a48c2,replaced (answer leak),$0.00,$ 0.00,100,0
+H1,CASE-025-wa329,3,session-2026-11-22-12-25-01-1648b275,replacement,$0.00,$ 0.00,0,0
+Final,CASE-023-wa319,1,session-2026-11-22-08-16-24-8517871d,kept,$77.96,$ 77.96,0,0
+Final,CASE-023-wa319,2,session-2026-11-22-08-26-10-8e51094f,kept,$77.96,$ 77.96,0,0
+Final,CASE-023-wa319,3,session-2026-11-22-08-32-01-11313925,replaced (answer leak),$0,$ 0,100,100
+Final,CASE-023-wa319,3,session-2026-11-22-14-17-35-5cb8fc65,replacement,N/A,n/a,0,0
+Final,CASE-025-wa329,1,session-2026-11-22-08-56-15-558985e5,kept,$0.00,$ 0.00,100,0
+Final,CASE-025-wa329,2,session-2026-11-22-09-00-25-6d6915f8,kept,$0.00,$ 0.00,0,0
+Final,CASE-025-wa329,3,session-2026-11-22-09-03-51-7954383f,kept,$0.00,$ 0.00,0,0

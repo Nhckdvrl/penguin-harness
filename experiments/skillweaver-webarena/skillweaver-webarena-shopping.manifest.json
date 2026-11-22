@@ -1,0 +1,279 @@
+{
+  "webarena_commit": "dce04686a56253aefba7b18a4fa0937cf1dc987b",
+  "test_raw_json_sha256": "7b50386fd69163dbc05d615d834df4c6ed2c35596e97a1b10d17451c02537652",
+  "site_url": "http://localhost:7770",
+  "rule": "sites == ['shopping'], eval_types within {string_match, url_match}, lowest task_id per intent_template_id, first N by task_id",
+  "n": 30,
+  "cases": [
+    {
+      "case": "CASE-001-wa21",
+      "task_id": 21,
+      "intent_template_id": 222,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "List out reviewers, if exist, who mention about ear cups being small"
+    },
+    {
+      "case": "CASE-002-wa47",
+      "task_id": 47,
+      "intent_template_id": 197,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Today is 6/12/2023. Tell me how many fulfilled orders I have over the past month, and the total amount of money I spent."
+    },
+    {
+      "case": "CASE-003-wa96",
+      "task_id": 96,
+      "intent_template_id": 193,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Tell me the status of my latest order and when will it arrive"
+    },
+    {
+      "case": "CASE-004-wa117",
+      "task_id": 117,
+      "intent_template_id": 161,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What is the date when I made my first purchase on this site?"
+    },
+    {
+      "case": "CASE-005-wa124",
+      "task_id": 124,
+      "intent_template_id": 159,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What is the price range of wireless earphone in the One Stop Market?"
+    },
+    {
+      "case": "CASE-006-wa141",
+      "task_id": 141,
+      "intent_template_id": 162,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "How much I spent on food-related shopping during March 2023"
+    },
+    {
+      "case": "CASE-007-wa146",
+      "task_id": 146,
+      "intent_template_id": 155,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What is the size configuration of the picture frame I bought Sep 2022"
+    },
+    {
+      "case": "CASE-008-wa158",
+      "task_id": 158,
+      "intent_template_id": 171,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "I have a lot of Nintendo Switch game cards now, help me find the best storage option to fit all 11 cards"
+    },
+    {
+      "case": "CASE-009-wa163",
+      "task_id": 163,
+      "intent_template_id": 136,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What are the main criticisms of this product? Please extract the relevant sentences."
+    },
+    {
+      "case": "CASE-010-wa188",
+      "task_id": 188,
+      "intent_template_id": 214,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Tell me the total cost of my latest cancelled order?"
+    },
+    {
+      "case": "CASE-011-wa225",
+      "task_id": 225,
+      "intent_template_id": 135,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What do customers say about brush from sephora"
+    },
+    {
+      "case": "CASE-012-wa226",
+      "task_id": 226,
+      "intent_template_id": 370,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "What is the price range for products from Amazon basic?"
+    },
+    {
+      "case": "CASE-013-wa231",
+      "task_id": 231,
+      "intent_template_id": 213,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Get the order number of my most recent cancelled order "
+    },
+    {
+      "case": "CASE-014-wa238",
+      "task_id": 238,
+      "intent_template_id": 138,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "I am doing a market survey for one stop market, show me the most expensive product from PS4 accessories category"
+    },
+    {
+      "case": "CASE-015-wa260",
+      "task_id": 260,
+      "intent_template_id": 211,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "I want to browse the products in the Video Game category"
+    },
+    {
+      "case": "CASE-016-wa269",
+      "task_id": 269,
+      "intent_template_id": 139,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Show me products under $25 in \"women shoes\" category"
+    },
+    {
+      "case": "CASE-017-wa274",
+      "task_id": 274,
+      "intent_template_id": 212,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Search for \"usb wifi\""
+    },
+    {
+      "case": "CASE-018-wa279",
+      "task_id": 279,
+      "intent_template_id": 204,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Provide me with the complete names of Bluetooth headphones from Sony, and also share the price range for the available models"
+    },
+    {
+      "case": "CASE-019-wa283",
+      "task_id": 283,
+      "intent_template_id": 210,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Look up the most recent models of XBox controllers released between 2020-2021?"
+    },
+    {
+      "case": "CASE-020-wa284",
+      "task_id": 284,
+      "intent_template_id": 207,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Show the least expensive shoe storage with a minimum storage capacity of 12 pairs."
+    },
+    {
+      "case": "CASE-021-wa298",
+      "task_id": 298,
+      "intent_template_id": 180,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Show the most recent completed order"
+    },
+    {
+      "case": "CASE-022-wa313",
+      "task_id": 313,
+      "intent_template_id": 134,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Which number to call for the customer service?"
+    },
+    {
+      "case": "CASE-023-wa319",
+      "task_id": 319,
+      "intent_template_id": 160,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "How much refund I should expect from my order canlled in April 2022, including shipping fee"
+    },
+    {
+      "case": "CASE-024-wa324",
+      "task_id": 324,
+      "intent_template_id": 208,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "Show me the \"chairs\" listings by ascending price."
+    },
+    {
+      "case": "CASE-025-wa329",
+      "task_id": 329,
+      "intent_template_id": 147,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "How much I spend on 4/19/2023 on shopping at One Stop Market?"
+    },
+    {
+      "case": "CASE-026-wa334",
+      "task_id": 334,
+      "intent_template_id": 169,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Tell me when I last ordered my muffin cornbread mix?"
+    },
+    {
+      "case": "CASE-027-wa351",
+      "task_id": 351,
+      "intent_template_id": 137,
+      "eval_types": [
+        "url_match"
+      ],
+      "intent": "List products from PS4 accessories category by ascending price"
+    },
+    {
+      "case": "CASE-028-wa358",
+      "task_id": 358,
+      "intent_template_id": 206,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Show me the shipping method for order number 187."
+    },
+    {
+      "case": "CASE-029-wa368",
+      "task_id": 368,
+      "intent_template_id": 188,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "find discounted items."
+    },
+    {
+      "case": "CASE-030-wa376",
+      "task_id": 376,
+      "intent_template_id": 182,
+      "eval_types": [
+        "string_match"
+      ],
+      "intent": "Summarize customer reviews for Amazon Echo Dot 3rd generation."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+id = "CASE-026-wa334"
+title = "WebArena Shopping task 334"
+description = "Tell me when I last ordered my muffin cornbread mix?"
+
+[budget]
+timeout = 900

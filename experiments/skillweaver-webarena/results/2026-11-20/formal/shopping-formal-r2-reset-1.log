@@ -1,0 +1,18 @@
+waiting for MySQL in the container...
+Flushed cache types:
+config
+layout
+block_html
+collections
+reflection
+db_ddl
+compiled_config
+eav
+customer_notification
+config_integration
+config_integration_api
+full_page
+config_webservice
+translate
+scheduled maintenance disabled before startup
+reset done 2026-11-20T05:25:06Z image sha256:8f9618d9194a46bc9f7bc96dc14deba0b968abce6c393d59cc7cd1dfec86ed6f url http://localhost:7770

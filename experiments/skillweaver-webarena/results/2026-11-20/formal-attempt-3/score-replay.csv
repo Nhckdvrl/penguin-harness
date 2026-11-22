@@ -1,0 +1,33 @@
+phase,case,run,trace_id,worker_score,audit_score,finding
+H1,CASE-001-wa21,1,session-2026-11-21-07-10-58-479e1dac,0.0,0,must include
+H1,CASE-001-wa21,2,session-2026-11-21-07-15-08-df5a930e,0.0,0,must include
+H1,CASE-001-wa21,3,session-2026-11-21-07-20-26-5bf9fe53,0.0,0,must include
+H1,CASE-002-wa47,1,session-2026-11-21-07-25-16-561b1dc5,100.0,,semantic rubric
+H1,CASE-002-wa47,2,session-2026-11-21-07-30-50-80b57aef,0.0,,semantic rubric
+H1,CASE-002-wa47,3,session-2026-11-21-07-39-07-2a574f0c,100.0,,semantic rubric
+H1,CASE-003-wa96,1,session-2026-11-21-07-57-33-a670605c,100.0,,semantic rubric
+H1,CASE-003-wa96,2,session-2026-11-21-08-01-54-2433c5ba,100.0,,semantic rubric
+H1,CASE-003-wa96,3,session-2026-11-21-08-05-30-e35a2f27,0.0,,semantic rubric
+H1,CASE-004-wa117,1,session-2026-11-21-08-13-36-d5287f43,100.0,,semantic rubric
+H1,CASE-004-wa117,2,session-2026-11-21-08-16-34-a73d37d4,100.0,,semantic rubric
+H1,CASE-004-wa117,3,session-2026-11-21-08-19-36-7000a772,100.0,,semantic rubric
+H1,CASE-005-wa124,1,session-2026-11-21-08-22-32-0fe213db,0.0,0,must include
+H1,CASE-005-wa124,2,session-2026-11-21-08-26-53-ba43e00b,0.0,0,must include
+H1,CASE-005-wa124,3,session-2026-11-21-08-31-39-93026aa0,0.0,0,must include
+H1,CASE-006-wa141,1,session-2026-11-21-08-35-35-58ad7741,0.0,0,must include
+H1,CASE-006-wa141,2,session-2026-11-21-08-39-14-5738a1cd,0.0,0,must include
+H1,CASE-006-wa141,3,session-2026-11-21-08-42-24-6fa8bd23,0.0,0,must include
+H1,CASE-007-wa146,1,session-2026-11-21-08-49-07-3c2e69f2,0.0,0,must include
+H1,CASE-007-wa146,2,session-2026-11-21-08-53-34-a615ebd7,0.0,0,must include
+H1,CASE-007-wa146,3,session-2026-11-21-08-57-45-dcc8e370,0.0,0,must include
+H1,CASE-008-wa158,1,session-2026-11-21-09-02-10-fa86d1fb,0.0,0,URL
+H1,CASE-008-wa158,2,session-2026-11-21-09-07-03-2fe1db2c,0.0,0,URL
+H1,CASE-008-wa158,3,session-2026-11-21-09-10-58-f2ef70df,0.0,0,URL
+H1,CASE-009-wa163,1,session-2026-11-21-09-15-29-812fa3bb,0.0,0,must include
+H1,CASE-009-wa163,2,session-2026-11-21-09-27-44-6e2db283,0.0,0,must include
+H1,CASE-009-wa163,3,session-2026-11-21-09-33-06-824042ab,0.0,0,must include
+H1,CASE-010-wa188,1,session-2026-11-21-09-38-10-3379278a,100.0,100,must include
+H1,CASE-010-wa188,2,session-2026-11-21-09-41-07-b7d99a41,100.0,100,must include
+H1,CASE-010-wa188,3,session-2026-11-21-09-43-56-e07db5fe,100.0,100,must include
+H1,CASE-011-wa225,1,session-2026-11-21-09-46-51-6b744eae,100.0,,semantic rubric
+H1,CASE-011-wa225,2,session-2026-11-21-09-53-19-832bacd2,100.0,0,ANSWER line absent

@@ -1,0 +1,6 @@
+id = "CASE-011-wa225"
+title = "WebArena Shopping task 225"
+description = "What do customers say about brush from sephora"
+
+[budget]
+timeout = 900

@@ -1,0 +1,6 @@
+id = "CASE-030-wa376"
+title = "WebArena Shopping task 376"
+description = "Summarize customer reviews for Amazon Echo Dot 3rd generation."
+
+[budget]
+timeout = 900

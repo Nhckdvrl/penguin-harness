@@ -1,0 +1,133 @@
+{
+  "site": "http://localhost:7770",
+  "apis": {
+    "search_products_in_category": {
+      "version": 3,
+      "created": "iter_0",
+      "updated": "iter_8",
+      "tests": [
+        "iter_13"
+      ]
+    },
+    "add_product_to_cart": {
+      "version": 3,
+      "created": "iter_1",
+      "updated": "iter_33",
+      "tests": []
+    },
+    "add_products_to_cart": {
+      "version": 3,
+      "created": "iter_4",
+      "updated": "iter_34",
+      "tests": []
+    },
+    "update_cart_item_quantity": {
+      "version": 1,
+      "created": "iter_5",
+      "updated": "iter_5",
+      "tests": [
+        "iter_6"
+      ]
+    },
+    "place_order_from_cart": {
+      "version": 3,
+      "created": "iter_7",
+      "updated": "iter_22",
+      "tests": [
+        "iter_27"
+      ]
+    },
+    "add_cheapest_matching_product_to_cart": {
+      "version": 2,
+      "created": "iter_8",
+      "updated": "iter_22",
+      "tests": [
+        "iter_39"
+      ]
+    },
+    "remove_product_from_cart": {
+      "version": 1,
+      "created": "iter_14",
+      "updated": "iter_14",
+      "tests": [
+        "iter_15"
+      ]
+    },
+    "add_product_to_wishlist": {
+      "version": 1,
+      "created": "<EXPERIMENT_ROOT>/penguin-data/default_project/agents/sw_shop_formal_r2_ctl/agent_state/scratchpad/session-2026-11-20-13-28-32-d13e8890/skillweaver-rsi-toolkit/sw_shop_formal_r2-20261120T053006Z/iter_16/reply/add_product_to_wishlist.mjs",
+      "updated": "<EXPERIMENT_ROOT>/penguin-data/default_project/agents/sw_shop_formal_r2_ctl/agent_state/scratchpad/session-2026-11-20-13-28-32-d13e8890/skillweaver-rsi-toolkit/sw_shop_formal_r2-20261120T053006Z/iter_16/reply/add_product_to_wishlist.mjs",
+      "tests": [
+        "iter_17"
+      ]
+    },
+    "buy_product_now": {
+      "version": 1,
+      "created": "iter_18",
+      "updated": "iter_18",
+      "tests": [
+        "iter_19"
+      ]
+    },
+    "buy_cheapest_matching_product": {
+      "version": 1,
+      "created": "iter_22",
+      "updated": "iter_22",
+      "tests": [
+        "iter_23"
+      ]
+    },
+    "reorder_past_order": {
+      "version": 1,
+      "created": "iter_24",
+      "updated": "iter_24",
+      "tests": [
+        "iter_25"
+      ]
+    },
+    "move_cart_item_to_wishlist": {
+      "version": 1,
+      "created": "iter_26",
+      "updated": "iter_26",
+      "tests": [
+        "iter_28"
+      ]
+    },
+    "buy_all_wishlist_items": {
+      "version": 1,
+      "created": "<EXPERIMENT_ROOT>/penguin-data/default_project/agents/sw_shop_formal_r2_ctl/agent_state/scratchpad/session-2026-11-20-13-28-32-d13e8890/skillweaver-rsi-toolkit/sw_shop_formal_r2-20261120T053006Z/iter_29",
+      "updated": "<EXPERIMENT_ROOT>/penguin-data/default_project/agents/sw_shop_formal_r2_ctl/agent_state/scratchpad/session-2026-11-20-13-28-32-d13e8890/skillweaver-rsi-toolkit/sw_shop_formal_r2-20261120T053006Z/iter_29",
+      "tests": [
+        "iter_31"
+      ]
+    },
+    "add_showcase_products_to_cart": {
+      "version": 2,
+      "created": "iter_30",
+      "updated": "iter_34",
+      "tests": []
+    },
+    "add_all_wishlist_items_to_cart": {
+      "version": 1,
+      "created": "iter_33",
+      "updated": "iter_33",
+      "tests": [
+        "iter_36"
+      ]
+    },
+    "empty_shopping_cart": {
+      "version": 1,
+      "created": "iter_35",
+      "updated": "iter_35",
+      "tests": [
+        "iter_38"
+      ]
+    },
+    "remove_product_from_wishlist": {
+      "version": 1,
+      "created": "iter_37",
+      "updated": "iter_37",
+      "tests": []
+    }
+  }
+}

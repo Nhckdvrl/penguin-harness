@@ -1,0 +1,6 @@
+id = "CASE-028-wa358"
+title = "WebArena Shopping task 358"
+description = "Show me the shipping method for order number 187."
+
+[budget]
+timeout = 900
